@@ -28,7 +28,11 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: [".js", ".jsx"] // use js, jsx file
+    extensions: [".js", ".jsx"], // use js, jsx file
+    alias: {
+      "~": path.resolve(__dirname, "src/"),
+      "~": path.resolve(__dirname, "src/components")
+    }
   },
   devServer: {
     open: true,
